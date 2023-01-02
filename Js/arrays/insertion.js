@@ -5,11 +5,11 @@ var array = [12, 16, 19, 11, 14, 10, 9]
 
 function insert() {
     var arr = [12, 16, 19, 11, 14, 10, 9]
-    var len = array.length - 1
+    var len = arr.length
     for (i = len; i > 3; i--) {
-        arr[i + 1] = arr[i]
-        arr[3] = 9
+        arr[i] = arr[i - 1]
     }
+    arr[3] = 100
     return arr
 }
 
